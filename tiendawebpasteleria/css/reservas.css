@@ -1,0 +1,98 @@
+
+* {
+    margin: 10;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+    background-color: #F7F9F2; 
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    min-height: 100vh; 
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+Header {
+    background-color: #E8C5E5; 
+    padding: 10px;
+    text-align: center;
+    width: 100%; 
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+nav a {
+    background-color: #F19ED2; 
+    color: white;
+    padding: 8px 15px;
+    margin: 0 10px;
+    border-radius: 5px;
+}
+
+
+h1 {
+    font-family: 'Titan One', sans-serif;
+    color: #91DDCF; 
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #F19ED2; 
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+a[href*="wa.me"] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #91DDCF; 
+    color: white;
+    padding: 10px 15px;
+    margin: 5px 0;
+    border-radius: 20px;
+    width: fit-content; 
+    gap: 8px;           
+}
+
+
+a[href*="wa.me"]::before {
+    content: "";
+    display: inline-block;
+    width: 20px;   
+    height: 20px;
+    background-image: url('whatsapp-icon.png'); 
+    background-size: contain;
+}
+
+
+a[href*="gmail.com"] {
+    background-color: #F19ED2; 
+    color: white;
+    padding: 10px 15px;
+    border-radius: 20px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+
+Header img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
